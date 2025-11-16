@@ -9,7 +9,7 @@ class TasbeehApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'مسبحة استغفار للطالبات نسيبةs',
+      title: ' مسبحة استغفار للطالبات نسيبةs',
       theme: ThemeData(
         primarySwatch: Colors.green,
         fontFamily: 'Cairo',
@@ -44,7 +44,12 @@ class _TasbeehScreenState extends State<TasbeehScreen> {
     return Scaffold(
       backgroundColor: Colors.green.shade50,
       appBar: AppBar(
-        title: const Text('مسبحة الاستغفار'),
+        title: const Text('مسبحة الاستغفار',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: Color.fromARGB(255, 255, 255, 255),
+            )),
         centerTitle: true,
         backgroundColor: Colors.green.shade700,
       ),
@@ -93,7 +98,8 @@ class _TasbeehScreenState extends State<TasbeehScreen> {
                   shape: const CircleBorder(),
                   padding: const EdgeInsets.all(40),
                 ),
-                child: const Icon(Icons.fingerprint, size: 40, color: Colors.white),
+                child: const Icon(Icons.fingerprint,
+                    size: 40, color: Colors.white),
               ),
               const SizedBox(height: 20),
               ElevatedButton.icon(
@@ -102,7 +108,8 @@ class _TasbeehScreenState extends State<TasbeehScreen> {
                 label: const Text('تصفير'),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.grey.shade400,
-                  padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
                 ),
               ),
             ],
