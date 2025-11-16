@@ -9,7 +9,7 @@ class TasbeehApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'مسبحة الاستغفار',
+      title: 'مسبحة استغفار للطالبات نسيبةs',
       theme: ThemeData(
         primarySwatch: Colors.green,
         fontFamily: 'Cairo',
